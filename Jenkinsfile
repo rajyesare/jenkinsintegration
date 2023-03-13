@@ -2,14 +2,16 @@ pipeline {
     agent any
     
     stages {
-        stage('Remove Docker Container and Image') {
+       /*
+	 stage('Remove Docker Container and Image') {
             steps {
                 sh 'docker stop 488a1a3c0590'
                 sh 'docker rm 488a1a3c0590'
                 sh 'docker rmi my-image-name'
-				sh 'docker rmi debian'
+		sh 'docker rmi debian'
             }
-	}		
+	}
+	*/
         stage('Build Docker Image') {
             steps {
                 script {
