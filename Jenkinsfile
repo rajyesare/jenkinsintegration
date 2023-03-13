@@ -9,7 +9,7 @@ pipeline {
                 sh 'docker rmi my-image-name'
 				sh 'docker rmi debian'
             }
-			
+	}		
         stage('Build Docker Image') {
             steps {
                 script {
