@@ -23,7 +23,7 @@ pipeline {
         stage('Run Docker Container') {
             steps {
                 script {
-                    docker.image('my-base-image:latest').run('-p 80:80')
+                    docker.image('my-base-image:latest').run('-p 80:80').name('mycontainer')
                 }
             }
         }
