@@ -2,8 +2,9 @@ pipeline {
     agent any
     
     stages {
+	    /*
         stage('Remove Docker Containers/Images') {
-		/*
+		
             steps {
 			sh 'docker stop 7c2cc42f7a54'
 			sh 'docker rm 7c2cc42f7a54'
