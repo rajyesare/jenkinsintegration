@@ -2,18 +2,15 @@ pipeline {
     agent any
     
     stages {
-	    /*
-        stage('Remove Docker Containers/Images') {
+	stage('Remove Docker Containers/Images') {
 		
             steps {
-			sh 'docker stop 7c2cc42f7a54'
-			sh 'docker rm 7c2cc42f7a54'
-			sh 'docker rmi 74b7e83b1921'
-			sh 'docker rmi e1635ddc0b1d'
+			sh 'docker stop 1e5d1f51021d'
+			sh 'docker rm 1e5d1f51021d'
+			sh 'docker rmi e559a4bf5954'			
 		}
 	}
-		*/
-        stage('Build Docker Image') {
+	stage('Build Docker Image') {
             steps {
                 script {
                     def dockerfile = 'Dockerfile'
