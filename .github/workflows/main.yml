@@ -11,7 +11,7 @@ jobs:
   second-job:
     runs-on: windows-latest
     steps:
-      - name: Second step
+      - name: Second Job First step
         run:	echo "1"
-      - name: Second Step
+      - name: Second Job Second Step
         run: echo "2" 	
