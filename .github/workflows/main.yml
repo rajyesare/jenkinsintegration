@@ -8,3 +8,10 @@ jobs:
         run: echo "Hello World !!!"
       - name: Print Goodbye
         run: echo "Don - Bye !!!"
+  second-job:
+    runs-on: windows-latest
+    steps:
+      - name: Second step
+        run:	echo "1"
+      - name: Second Step
+        run: echo "2" 	
