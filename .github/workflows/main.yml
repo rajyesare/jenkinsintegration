@@ -1,0 +1,10 @@
+name: GAWF Name
+on: workflow_dispatch		# Trigger
+Jobs:
+	first-job:
+		runs-on: ubuntu-latest
+		steps:
+			- name: Print Greeting
+			  run: echo "Hello World !!!"
+			- name: Print Goodbye
+			  run: echo "Don - Bye !!!"
