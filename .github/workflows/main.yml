@@ -1,6 +1,6 @@
 name: GAWF Name
 on: workflow_dispatch
-Jobs:
+jobs:
   first-job:
     runs-on: ubuntu-latest
     steps:
