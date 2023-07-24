@@ -13,7 +13,7 @@ jobs:
   second-job:
     runs-on: windows-latest
     steps:
-      - name: Second Job First step
-        run:	echo "1"
+      - name: Get Code
+        uses:	actions/checkout@v3.5.3
       - name: Second Job Second Step
         run: echo "2" 	
