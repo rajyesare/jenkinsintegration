@@ -9,11 +9,15 @@ jobs:
           echo "Hello World !!!"
           echo "on second line"
       - name: Print Goodbye
-        run: echo "Don - Bye !!!"
+        run: echo "Job 1 Done !!!"
   second-job:
     runs-on: windows-latest
     steps:
       - name: Get Code
         uses:	actions/checkout@v3.5.3
+      - name: Install NodeJS
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
       - name: Second Job Second Step
-        run: echo "2" 	
+        run: echo "End of Job 2 - Bye " 	
