@@ -11,6 +11,7 @@ jobs:
       - name: Print Goodbye
         run: echo "Job 1 Done !!!"
   second-job:
+    needs: first-job
     runs-on: windows-latest
     steps:
       - name: Get Code
